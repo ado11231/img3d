@@ -8,6 +8,3 @@ def load_image(path):
     img_rgb = cv.cvtColor(img, cv.COLOR_BGR2RGB)
     
     return img_rgb
-
-
-
