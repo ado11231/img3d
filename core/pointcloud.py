@@ -1,9 +1,10 @@
-import numpy as np
-from config import FX, FY, CX, CY
-
 # Takes the original image and depth map and converts every pixel into a 3D point.
 # Back-projection formula: X = (u - cx) * depth / fx, Y = (v - cy) * depth / fy, Z = depth
 # Returns points (N, 3) with XYZ coordinates and colors (N, 3) with RGB values.
+
+import numpy as np
+from config import FX, FY, CX, CY
+
 def point_cloud(image, depth_image):
     height, width = image.shape[:2]
 

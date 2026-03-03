@@ -5,7 +5,7 @@ path = Path('assets/images')
 image = 'image.jpg'
 full_path = path / image
 
-MIDAS_SMALL = "MiDaS_small"
+MIDAS_SMALL = "DPT_Hybrid"
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 IMAGE_WIDTH = 640

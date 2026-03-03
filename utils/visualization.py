@@ -1,3 +1,6 @@
+# Displays two images side by side in a matplotlib window.
+# Used to compare the original photo and its normalized depth heatmap.
+
 import matplotlib.pyplot as plt
 
 def compare_image(image1, image2):

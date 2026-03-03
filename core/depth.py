@@ -1,12 +1,13 @@
-import torch
-import cv2 as cv
-from config import MIDAS_SMALL, device
-
 # Loads MiDaS model and transform from torch.hub.
 # Preprocesses the image into the format MiDaS expects.
 # Runs inference to produce raw depth values.
 # Resizes depth output to match original image dimensions.
 # Returns depth map as a float32 NumPy array.
+
+import torch
+import cv2 as cv
+from config import MIDAS_SMALL, device
+
 def load_depth(image):
     model_type = MIDAS_SMALL
     midas = torch.hub.load("intel-isl/MiDaS", model_type)
