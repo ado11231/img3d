@@ -31,19 +31,3 @@ python3 main.py
 Run with a custom image:
 python3 main.py /path/to/your/image.jpg
 
-Project Structure:
-
-img3d/
-├── main.py              # pipeline orchestrator
-├── config.py            # settings and camera intrinsics
-├── core/
-│   ├── loader.py        # image loading
-│   ├── depth.py         # MiDaS depth estimation
-│   ├── pointcloud.py    # back-projection 2D to 3D
-│   └── viewer.py        # Open3D visualization
-├── utils/
-│   ├── normalize.py     # depth map normalization
-│   └── visualization.py # side by side display
-└── assets/
-    └── images/          # input images
-```
